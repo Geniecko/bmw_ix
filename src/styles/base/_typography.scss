@@ -1,24 +1,20 @@
 p {
-  font-size: 1.3rem;
-  line-height: 2.4rem;
+  line-height: 24px;
   color: $text-color;
   font-family: $tertiary-font;
   font-weight: 400;
 
   @include media-up(sm) {
-    font-size: 1.4rem;
     font-family: $primary-color;
   }
 
   .lead {
+    @include fluid-font-size($min_width, $max_width, 16px, 20px);
+    @include fluid-line-height($min_width, $max_width, 24px, 32px);
     font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
     color: $lead-color;
 
     @include media-up(sm) {
-      font-size: 2rem;
-      line-height: 3.2rem;
       font-family: $primary-color;
     }
   }
@@ -34,18 +30,13 @@ h5 {
 }
 
 h2 {
+  @include fluid-font-size($min_width, $max_width, 24px, 36px);
+  @include fluid-line-height($min_width, $max_width, 28px, 40px);
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.8rem;
-
-  @include media-up(sm) {
-    font-size: 3.6rem;
-    line-height: 4rem;
-  }
 }
 
 h3 {
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 4rem;
+  font-size: 20px;
+  line-height: 40px;
 }
