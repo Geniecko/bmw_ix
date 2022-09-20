@@ -1,0 +1,17 @@
+$primary-color: '#3369D3';
+$black-color: '#000000';
+$white-color: '#FFFFFF';
+$page-color: $white-color;
+$text-color: '#4E4E4E';
+$lead-color: '#707070';
+
+$primary-font: 'Cairo', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+$tertiary-font: 'Roboto', sans-serif;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);

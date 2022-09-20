@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $page-color;
+  font-size: 1.6rem;
+  font-family: $primary-font, sans-serif;
+}
+
+.content-container {
+  max-width: 1364px;
+  margin: 0 auto;
+}
