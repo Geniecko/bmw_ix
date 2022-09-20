@@ -24,7 +24,10 @@
     & {
       font-size: $min-font-size;
       @media screen and (min-width: $min-vw) {
-        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
       }
       @media screen and (min-width: $max-vw) {
         font-size: $max-font-size;
@@ -43,7 +46,11 @@
     & {
       line-height: $min-line-height;
       @media screen and (min-width: $min-vw) {
-        line-height: calc(#{$min-line-height} + #{strip-unit($max-line-height - $min-line-height)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        line-height: calc(
+          #{$min-line-height} + #{strip-unit(
+              $max-line-height - $min-line-height
+            )} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
       }
       @media screen and (min-width: $max-vw) {
         line-height: $max-line-height;

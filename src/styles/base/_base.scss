@@ -12,12 +12,12 @@ body {
   @include fluid-font-size($min_width, $max_width, 13px, 14px);
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-strong{
+strong {
   font-weight: 700;
 }
 

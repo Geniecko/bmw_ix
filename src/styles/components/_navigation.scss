@@ -1,10 +1,14 @@
-.navigation{
+.navigation {
   flex: 1;
-  border-bottom: 1px solid rgba($white-color, 0.25);
+
   position: relative;
   color: $white-color;
 
-  &__list{
+  @include media-up(md) {
+    border-bottom: 1px solid rgba($white-color, 0.25);
+  }
+
+  &__list {
     @extend %reset-list-styles;
     display: flex;
     align-items: center;
@@ -12,19 +16,23 @@
     padding: 24px 0;
   }
 
-  &__item{
+  &__item {
     @include fluid-font-size($min_width, $max_width, 18px, 18px);
     @include fluid-line-height($min_width, $max_width, 33px, 33px);
     font-family: $primary-font;
     font-weight: 700;
   }
 
-  &__additional-text{
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: -32px;
-    font-family: $primary-font;
-    font-size: 16px;
+  &__additional-text {
+    display: none;
+
+    @include media-up(md) {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: -32px;
+      font-family: $primary-font;
+      font-size: 16px;
+    }
   }
 }
