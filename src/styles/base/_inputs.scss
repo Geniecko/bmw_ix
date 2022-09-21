@@ -1,0 +1,14 @@
+.input-text{
+  @extend %reset-input;
+  border: 1px solid rgba(#707070, 0.25);
+  padding: 16px 22px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  
+  &:focus{
+    outline: 0;
+  }
+}

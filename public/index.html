@@ -27,7 +27,7 @@
         </ul>
         <div class="navigation__mobile">
           <div class="navigation__mobile__logo">
-            <img src="./assets/images/bmw_logo.png" alt="BMW logo" width="52" height="52">
+            <img src="./assets/svg/bmw_logo.svg" alt="BMW logo">
           </div>
           <button id="navTrigger--close" class="navigation__mobile__close">
             <span></span>
@@ -51,10 +51,11 @@
         <span class="navigation__additional-text"><strong>Radość</strong> z jazdy</span>
       </nav>
       <div class="main-header__logo">
-        <img src="./assets/images/bmw_logo.png" alt="BMW logo" width="52" height="52">
+        <img src="./assets/svg/bmw_logo.svg" alt="BMW logo">
       </div>
     </div>
   </header>
+
   <section class="hero-header">
     <div class="hero-header__slider">
       <div class="hero-slider splide">
@@ -63,7 +64,7 @@
             <div class="hero-slider__slide slide-1 splide__slide">
               <div class="hero-slider__slide__inner">
                 <div class="content-container">
-                  <img src="./assets/images/bmw_i_logo.png" alt="BMW I logo">
+                  <img src="./assets/svg/bmw_i_logo.svg" alt="BMW I logo">
                   <h1>NOWE BMW iX</h1>
                   <span>PIONIER NOWEJ ERY.</span>
                 </div>
@@ -72,7 +73,7 @@
             <div class="hero-slider__slide slide-2 splide__slide">
               <div class="hero-slider__slide__inner">
                 <div class="content-container">
-                  <img src="./assets/images/bmw_i_logo.png" alt="BMW I logo">
+                  <img src="./assets/svg/bmw_i_logo.svg" alt="BMW I logo">
                   <h1>NOWE BMW iX</h1>
                   <span>SECOND SLIDE.</span>
                 </div>
@@ -81,7 +82,7 @@
             <div class="hero-slider__slide slide-3 splide__slide">
               <div class="hero-slider__slide__inner">
                 <div class="content-container">
-                  <img src="./assets/images/bmw_i_logo.png" alt="BMW I logo">
+                  <img src="./assets/svg/bmw_i_logo.svg" alt="BMW I logo">
                   <h1>NOWE BMW iX</h1>
                   <span>THRID SLIDE.</span>
                 </div>
@@ -101,6 +102,7 @@
     </div>
 
   </section>
+
   <section class="about">
     <div class="content-container about__wrapper about__wrapper--facts">
       <div class="about__images about__images--facts">
@@ -181,6 +183,54 @@
     </div>
   </section>
 
+  <section class="registration-form">
+    <img class="registration-form__background registration-form__background--2"
+      src="./assets/images/reg-background/bmw-ix-front.png" alt="Registration backgorund">
+    <img class="registration-form__background registration-form__background--3" src="./assets/svg/sign_path_13.svg"
+      alt="Registration backgorund">
+    <img class="registration-form__background registration-form__background--4" src="./assets/svg/sign_path_15.svg"
+      alt="Registration backgorund">
+      <img class="registration-form__background registration-form__background--5" src="./assets/svg/sign_path_14.svg"
+      alt="Registration backgorund">
+      <img class="registration-form__background registration-form__background--6" src="./assets/svg/sign_path_12.svg"
+      alt="Registration backgorund">
+    <div class="content-container">
+      <div class="registration-form__wrapper">
+        <h2 class="registration-form__title">UMÓW JAZDĘ PRÓBNĄ<span>BMW iX</span></h2>
+        <p class="lead">Zachęcamy do ograniczenia poruszania się i pozostania w domu.</p>
+        <p class="lead">Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego formularza.</p>
+        <h3 class="registration-form__subtitle">Wypełnij formularz swoimi danymi.</h3>
+        <form id="signForm" class="sign-form">
+          <div class="sign-form__radios">
+            <div class="sign-form__radio">
+              <input type="radio" id="male" name="gender" value="male" checked>
+              <label for="male">Pan</label>
+            </div>
+            <div class="sign-form__radio">
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Pani</label>
+            </div>
+          </div>
+          <div class="sign-form__input">
+            <input class="input-text" type="text" id="name" name="name" placeholder="Imię" required>
+          </div>
+          <div class="sign-form__input">
+            <input class="input-text" type="text" id="surname" name="surname" placeholder="Nazwisko" required>
+          </div>
+          <div class="sign-form__input">
+            <input class="input-text" type="email" id="email" name="email" placeholder="E-mail" required>
+          </div>
+          <div class="sign-form__input">
+            <input class="input-text" type="tel" id="tel" name="tel" placeholder="Numer telefonu" required>
+          </div>
+          <button id="signFormButton" type="submit" class="button">Wyślij</button>
+        </form>
+      </div>
+    </div>
+    <img class="registration-form__background registration-form__background--1"
+      src="./assets/images/reg-background/bmw-ix.png" alt="Registration backgorund">
+  </section>
+
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="content-container">
@@ -189,11 +239,11 @@
             Dołącz do nas
           </h4>
           <div class="footer-socials__icons">
-            <a href="#"><img src="./assets/icons/facebook-icon.svg" alt="Facebook icon"></a>
-            <a href="#"><img src="./assets/icons/instagram-icon.svg" alt="Instagram icon"></a>
-            <a href="#"><img src="./assets/icons/youtube-icon.svg" alt="Youtube icon"></a>
-            <a href="#"><img src="./assets/icons/linkedin-icon.svg" alt="Linkedin icon"></a>
-            <a href="#"><img src="./assets/icons/twitter-icon.svg" alt="Twitter icon"></a>
+            <a href="#"><img src="./assets/icons/facebook.png" alt="Facebook icon"></a>
+            <a href="#"><img src="./assets/icons/instagram.png" alt="Instagram icon"></a>
+            <a href="#"><img src="./assets/icons/youtube.png" alt="Youtube icon"></a>
+            <a href="#"><img src="./assets/icons/linkedin.png" alt="Linkedin icon"></a>
+            <a href="#"><img src="./assets/icons/twitter.png" alt="Twitter icon"></a>
           </div>
         </div>
         <div class="footer__columns">
@@ -232,6 +282,14 @@
       </div>
     </div>
   </footer>
+
+  <dialog id="signSuccess" class="sign-success">
+    <div class="sign-success__wrapper">
+      <h3 class="sign-success__title">DZIĘKUJEMY</h2>
+        <p class="sign-success__message">Skontaktujemy się z Tobą w najbliższym możliwym terminie.</p>
+        <button id="closePopupSuccess" class="button">Ok</button>
+    </div>
+  </dialog>
 </body>
 
 </html>
