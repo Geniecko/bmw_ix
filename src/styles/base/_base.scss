@@ -11,7 +11,7 @@ body {
   font-family: $primary-font, sans-serif;
   @include fluid-font-size($min_width, $max_width, 13px, 14px);
 
-  &.disable-scroll{
+  &.disable-scroll {
     overflow: hidden;
   }
 }

@@ -48,7 +48,6 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    
 
     @include media-up(lg) {
       position: unset;
@@ -99,7 +98,7 @@
     padding-left: 100px;
   }
 
-  &__icon{
+  &__icon {
     display: block;
     margin-bottom: 10px;
   }
@@ -112,16 +111,16 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    
-    @include media-up(md){
+
+    @include media-up(md) {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    @include media-up(lg){
+    @include media-up(lg) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @include media-up(xl){
+    @include media-up(xl) {
       grid-template-columns: repeat(3, 1fr);
     }
 
@@ -135,8 +134,8 @@
         padding-bottom: 8px;
         border-bottom: 1px solid rgba(#707070, 0.25);
 
-        &:after{
-          content: "";
+        &:after {
+          content: '';
           position: absolute;
           top: 0;
           left: 0;
@@ -160,7 +159,7 @@
     padding-right: 100px;
   }
 
-  &__icon{
+  &__icon {
     display: block;
     margin-bottom: 10px;
   }

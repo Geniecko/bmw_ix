@@ -1,5 +1,3 @@
-
-
 window.addEventListener('DOMContentLoaded', () => {
   const mobileTriggerOpen = document.getElementById('navTrigger--open');
   const mobileTriggerClose = document.getElementById('navTrigger--close');
@@ -16,14 +14,18 @@ window.addEventListener('DOMContentLoaded', () => {
     mobileMenu.classList.remove('is-open');
     document.body.classList.remove('disable-scroll');
 
-    mobileNavLinks.forEach(link => link.removeEventListener('click', hideMobileMenu));
+    mobileNavLinks.forEach((link) =>
+      link.removeEventListener('click', hideMobileMenu)
+    );
     mobileButton.removeEventListener('click', hideMobileMenu);
   }
 
   mobileTriggerOpen.addEventListener('click', () => {
     showMobileMenu();
 
-    mobileNavLinks.forEach(link => link.addEventListener('click', hideMobileMenu));
+    mobileNavLinks.forEach((link) =>
+      link.addEventListener('click', hideMobileMenu)
+    );
     mobileButton.addEventListener('click', hideMobileMenu);
   });
 

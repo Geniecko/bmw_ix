@@ -1,10 +1,10 @@
-.sign-success{
+.sign-success {
   max-width: 300px;
   background-color: transparent;
   width: 70%;
   border: 0;
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,15 +12,14 @@
     text-align: center;
   }
 
-  &__title{
+  &__title {
     font-size: 24px;
     color: $white-color;
     margin-bottom: 20px;
     font-weight: 700;
-
   }
 
-  &__message{
+  &__message {
     font-size: 13px;
     line-height: 24px;
     color: $white-color;
@@ -28,11 +27,11 @@
     font-weight: 400;
   }
 
-  .button{
+  .button {
     margin-top: 60px;
   }
 
-  &::backdrop{
-    background-color: rgba($black-color, .9);
+  &::backdrop {
+    background-color: rgba($black-color, 0.9);
   }
 }

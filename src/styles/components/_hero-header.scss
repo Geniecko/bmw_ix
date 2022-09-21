@@ -3,7 +3,7 @@
   position: relative;
   max-height: 100vh;
 
-  @include media-up(lg){
+  @include media-up(lg) {
     min-height: 864px;
   }
 
@@ -23,7 +23,7 @@
     z-index: 11;
 
     @include media-up(lg) {
-      bottom: 84px; 
+      bottom: 84px;
     }
 
     .splide__pagination {

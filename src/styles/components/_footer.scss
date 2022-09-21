@@ -64,8 +64,8 @@
     align-items: center;
     gap: 16px;
 
-    @include media-up(sm){
-      gap:32px;
+    @include media-up(sm) {
+      gap: 32px;
     }
 
     a {
