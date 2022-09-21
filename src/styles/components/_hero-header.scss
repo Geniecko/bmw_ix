@@ -1,6 +1,7 @@
 .hero-header {
-  min-height: 864px;
+  min-height: 720px;
   position: relative;
+  max-height: 100vh;
 
   &__slider {
     position: absolute;
@@ -18,7 +19,8 @@
     z-index: 11;
 
     @include media-up(lg) {
-      bottom: 84px;
+      bottom: 84px; 
+      min-height: 864px;
     }
 
     .splide__pagination {

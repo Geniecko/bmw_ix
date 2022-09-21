@@ -99,6 +99,11 @@
     padding-left: 100px;
   }
 
+  &__icon{
+    display: block;
+    margin-bottom: 10px;
+  }
+
   &__headline {
     margin-bottom: 30px;
   }
@@ -142,6 +147,11 @@
 
   @include media-up(lg) {
     padding-right: 100px;
+  }
+
+  &__icon{
+    display: block;
+    margin-bottom: 10px;
   }
 
   &__headline {
