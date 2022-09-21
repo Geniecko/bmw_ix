@@ -9,6 +9,7 @@
   text-transform: uppercase;
   @include fluid-font-size($min_width, $max_width, 14px, 18px);
   @include fluid-line-height($min_width, $max_width, 26px, 33px);
+  white-space: nowrap;
 
   @include media-up(md) {
     padding: 15px 90px;

@@ -1,7 +1,5 @@
 .navigation {
   flex: 1;
-
-  position: relative;
   color: $white-color;
 
   @include media-up(md) {
@@ -10,10 +8,14 @@
 
   &__list {
     @extend %reset-list-styles;
-    display: flex;
     align-items: center;
     gap: 60px;
     padding: 24px 0;
+    display: none;
+
+    @include media-up(md) {
+      display: flex;
+    }
   }
 
   &__item {
@@ -21,6 +23,122 @@
     @include fluid-line-height($min_width, $max_width, 33px, 33px);
     font-family: $primary-font;
     font-weight: 700;
+  }
+
+  &__mobile{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: $black-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+
+    @include media-up(md){
+      display: none;
+    }
+
+    &.is-open{
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__logo{
+      position: absolute;
+      top: 20px;
+      right: 32px;
+
+      img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &__close{
+      position: absolute;
+      top: 120px;
+      right: 37px;
+      @extend %reset-button;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 28px;
+      height: 28px;
+
+      span{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border-radius: 5px;
+        background-color: #858585;
+
+        &:nth-child(1){
+          transform: rotate(-45deg);
+        }
+
+        &:nth-child(2){
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    &__list{
+      padding: 0 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item{
+      padding: 30px 14px;
+      border-bottom: 1px solid #343434;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+
+    &__button{
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__hamburger {
+    @extend %reset-button;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 28px;
+
+    @include media-up(md) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      border-radius: 5px;
+      background-color: $white-color;
+    }
   }
 
   &__additional-text {

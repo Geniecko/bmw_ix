@@ -9,26 +9,53 @@
 </head>
 
 <body>
-
-  <section class="hero-header">
-    <div class="content-container">
-      <header class="main-header">
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Nowe BMW iX</a>
+  <header class="main-header">
+    <div class="content-container main-header__wrapper">
+      <nav class="navigation">
+        <button id="navTrigger--open" class="navigation__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Nowe BMW iX</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Umów jazdę próbną</a>
+          </li>
+        </ul>
+        <div class="navigation__mobile">
+          <div class="navigation__mobile__logo">
+            <img src="./assets/images/bmw_logo.png" alt="BMW logo" width="52" height="52">
+          </div>
+          <button id="navTrigger--close" class="navigation__mobile__close">
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="navigation__mobile__list">
+            <li class="navigation__mobile__item">
+              <a class="navigation__mobile__link" href="#">NOWE BMW iX</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Umów jazdę próbną</a>
+            <li class="navigation__mobile__item">
+              <a class="navigation__mobile__link" href="#">INNOWACYJNA AERODYNAMIKA</a>
+            </li>
+            <li class="navigation__mobile__item">
+              <a class="navigation__mobile__link" href="#">GALERIA</a>
             </li>
           </ul>
-          <span class="navigation__additional-text"><strong>Radość</strong> z jazdy</span>
-        </nav>
-        <div class="main-header__logo">
-          <img src="./assets/images/bmw_logo.png" alt="BMW logo" width="52" height="52">
+      
+            <button class="button navigation__mobile__button">Umów jazdę próbną</button>
+      
         </div>
-      </header>
+        <span class="navigation__additional-text"><strong>Radość</strong> z jazdy</span>
+      </nav>
+      <div class="main-header__logo">
+        <img src="./assets/images/bmw_logo.png" alt="BMW logo" width="52" height="52">
+      </div>
     </div>
+  </header>
+  <section class="hero-header">
     <div class="hero-header__slider">
       <div class="hero-slider splide">
         <div class="splide__track">
