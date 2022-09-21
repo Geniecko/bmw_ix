@@ -3,6 +3,10 @@
   position: relative;
   max-height: 100vh;
 
+  @include media-up(lg){
+    min-height: 864px;
+  }
+
   &__slider {
     position: absolute;
     top: 0;
@@ -20,7 +24,6 @@
 
     @include media-up(lg) {
       bottom: 84px; 
-      min-height: 864px;
     }
 
     .splide__pagination {
