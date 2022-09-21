@@ -8,14 +8,14 @@ p {
     font-family: $primary-color;
   }
 
-  .lead {
+  &.lead {
     @include fluid-font-size($min_width, $max_width, 16px, 20px);
     @include fluid-line-height($min_width, $max_width, 24px, 32px);
     font-weight: 300;
     color: $lead-color;
 
     @include media-up(sm) {
-      font-family: $primary-color;
+      font-family: $secondary-font;
     }
   }
 }

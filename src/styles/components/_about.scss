@@ -1,0 +1,154 @@
+.about {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 120px;
+
+  @include media-up(sm) {
+    margin-top: 80px;
+  }
+
+  @include media-up(lg) {
+    margin-top: 180px;
+  }
+
+  &__wide-container {
+    position: relative;
+  }
+
+  &__wrapper {
+    display: flex;
+    max-width: 1600px;
+    flex-direction: column;
+    gap: 60px;
+    overflow: hidden;
+
+    @include media-up(lg) {
+      flex-direction: row;
+      gap: 0;
+    }
+
+    &--aerodynamics {
+      align-items: center;
+      margin-top: 120px;
+      flex-direction: column-reverse;
+
+      @include media-up(lg) {
+        flex-direction: row;
+        gap: 0;
+      }
+    }
+  }
+
+  &__images {
+    display: flex;
+    gap: 16px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+
+    @include media-up(lg) {
+      position: unset;
+      left: unset;
+      right: unset;
+      margin: 0;
+      width: 50%;
+      align-self: self-start;
+    }
+
+    &--aerodynamics {
+      flex-direction: row-reverse;
+      position: unset;
+
+      .about__image--1 {
+        align-self: flex-start;
+      }
+
+      .about__image--2 {
+        padding-top: 60px;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__image {
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--1 {
+      width: 30%;
+      align-self: flex-end;
+    }
+    &--2 {
+      width: 70%;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.bmw-facts {
+  flex: 1;
+
+  @include media-up(lg) {
+    padding-left: 100px;
+  }
+
+  &__headline {
+    margin-bottom: 30px;
+  }
+
+  .facts-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    
+    @include media-up(md){
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-up(lg){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-up(xl){
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+      span {
+        font-size: 12px;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(#707070, 0.25);
+      }
+
+      p {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.bmw-aerodynamics {
+  flex: 1;
+
+  @include media-up(lg) {
+    padding-right: 100px;
+  }
+
+  &__headline {
+    margin-bottom: 30px;
+  }
+
+  &__lead {
+    margin-bottom: 30px;
+  }
+}
