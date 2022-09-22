@@ -1,13 +1,11 @@
 .footer {
-  margin-top: 180px;
-
   &__wrapper {
     background-color: #e6e6e6;
-    padding: 30px 0;
   }
 
   &__columns {
-    padding: 80px 0;
+    @include fluid-padding($min_width, $max_width,60px, 90px, top);
+    @include fluid-padding($min_width, $max_width,90px, 120px, bottom);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 60px;

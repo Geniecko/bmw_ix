@@ -1,15 +1,5 @@
 .about {
   width: 100%;
-  margin-top: 60px;
-  margin-bottom: 120px;
-
-  @include media-up(sm) {
-    margin-top: 80px;
-  }
-
-  @include media-up(lg) {
-    margin-top: 180px;
-  }
 
   &__wide-container {
     position: relative;
@@ -29,7 +19,7 @@
 
     &--aerodynamics {
       align-items: center;
-      margin-top: 120px;
+      @include fluid-margin($min_width, $max_width, 60px, 120px, top);
       flex-direction: column-reverse;
 
       @include media-up(lg) {
@@ -156,7 +146,7 @@
   flex: 1;
 
   @include media-up(lg) {
-    padding-right: 100px;
+    @include fluid-padding($min_width, $max_width,60px, 100px, right);
   }
 
   &__icon {

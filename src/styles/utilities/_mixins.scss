@@ -58,3 +58,49 @@
     }
   }
 }
+
+@mixin fluid-padding($min-vw, $max-vw, $min, $max, $type) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min);
+  $u4: unit($max);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      padding-#{$type}: $min;
+      @media screen and (min-width: $min-vw) {
+        padding-#{$type}: calc(
+          #{$min} + #{strip-unit(
+              $max - $min
+            )} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+      @media screen and (min-width: $max-vw) {
+        padding-#{$type}: $max;
+      }
+    }
+  }
+}
+
+@mixin fluid-margin($min-vw, $max-vw, $min, $max, $type) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min);
+  $u4: unit($max);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      margin-#{$type}: $min;
+      @media screen and (min-width: $min-vw) {
+        margin-#{$type}: calc(
+          #{$min} + #{strip-unit(
+              $max - $min
+            )} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+      @media screen and (min-width: $max-vw) {
+        margin-#{$type}: $max;
+      }
+    }
+  }
+}

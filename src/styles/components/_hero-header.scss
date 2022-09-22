@@ -117,14 +117,10 @@
       h1 {
         color: $white-color;
         font-family: $primary-font;
-        margin: 30px 0;
-        font-weight: 700;
+        @include fluid-margin($min_width, $max_width, 30px, 48px, top);
+        @include fluid-margin($min_width, $max_width, 30px, 48px, bottom);
         @include fluid-font-size($min_width, $max_width, 48px, 64px);
         @include fluid-line-height($min_width, $max_width, 56px, 64px);
-
-        @include media-up(md) {
-          margin: 48px 0;
-        }
       }
 
       span {
