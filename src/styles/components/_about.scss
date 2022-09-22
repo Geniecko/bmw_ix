@@ -85,7 +85,7 @@
   flex: 1;
 
   @include media-up(lg) {
-    @include fluid-padding($min_width, $max_width,60px, 100px, left);
+    @include fluid-padding($min_width, $max_width, 60px, 100px, left);
   }
 
   &__icon {
@@ -146,7 +146,7 @@
   flex: 1;
 
   @include media-up(lg) {
-    @include fluid-padding($min_width, $max_width,60px, 100px, right);
+    @include fluid-padding($min_width, $max_width, 60px, 100px, right);
   }
 
   &__icon {

@@ -1,23 +1,23 @@
-.padding--m-top{
-  @include fluid-padding($min_width, $max_width,40px, 80px, top);
+.padding--m-top {
+  @include fluid-padding($min_width, $max_width, 40px, 80px, top);
 }
 
-.padding-m--bottom{
-  @include fluid-padding($min_width, $max_width,40px, 80px, bottom);
+.padding-m--bottom {
+  @include fluid-padding($min_width, $max_width, 40px, 80px, bottom);
 }
 
-.padding-l--top{
-  @include fluid-padding($min_width, $max_width,40px, 120px, top);
+.padding-l--top {
+  @include fluid-padding($min_width, $max_width, 40px, 120px, top);
 }
 
-.padding-l--bottom{
-  @include fluid-padding($min_width, $max_width,40px, 120px, bottom);
+.padding-l--bottom {
+  @include fluid-padding($min_width, $max_width, 40px, 120px, bottom);
 }
 
-.padding-xl--top{
-  @include fluid-padding($min_width, $max_width,60px, 180px, top);
+.padding-xl--top {
+  @include fluid-padding($min_width, $max_width, 60px, 180px, top);
 }
 
-.padding-xl--bottom{
-  @include fluid-padding($min_width, $max_width,60px, 180px, bottom);
+.padding-xl--bottom {
+  @include fluid-padding($min_width, $max_width, 60px, 180px, bottom);
 }
