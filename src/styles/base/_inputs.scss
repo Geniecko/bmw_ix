@@ -11,4 +11,9 @@
   &:focus {
     outline: 0;
   }
+
+  &:hover,
+  &:focus{
+    border: 1px solid rgba($primary-color, 0.75);
+  }
 }

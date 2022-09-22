@@ -1,17 +1,45 @@
 .button {
   @extend %reset-button;
-  padding: 10px 60px;
-  background-color: $primary-color;
   color: $white-color;
   font-family: $primary-font;
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
+  background-color: $primary-color;
+  @include fluid-padding($min_width, $max_width, 10px, 15px, top);
+  @include fluid-padding($min_width, $max_width, 10px, 15px, bottom);
+  @include fluid-padding($min_width, $max_width, 60px, 90px, left);
+  @include fluid-padding($min_width, $max_width, 60px, 90px, right);
   @include fluid-font-size($min_width, $max_width, 14px, 18px);
   @include fluid-line-height($min_width, $max_width, 26px, 33px);
   white-space: nowrap;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 
-  @include media-up(md) {
-    padding: 15px 90px;
+  span {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  }
+
+  &::after {
+    background: lighten($primary-color, 7%);
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover:after {
+    height: 100%;
+    width: 135%;
   }
 }
