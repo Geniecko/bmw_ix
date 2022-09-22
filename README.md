@@ -16,3 +16,5 @@ Aby uruchomić projekt należy zainstalować paczki lokalnie używając komendy:
 ### Formatowanie 
 
 - Uruchom ```npm run format``` aby sformatować wszystkie pliki znajdujące się w katalogu ```src```.
+
+### Live: https://zad-rekrutacyjne-rk.netlify.app/
