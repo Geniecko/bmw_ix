@@ -5,8 +5,61 @@
   margin-left: auto;
   margin-right: auto;
 
+  &__grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+
+    @include media-up(lg) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+    }
+  }
+
   &__image {
     width: 100%;
+
+    &--1 {
+      grid-area: 1 / 1 / 7 / 7;
+
+      @include media-up(lg) {
+        grid-area: 1 / 1 / 9 / 7;
+      }
+    }
+
+    &--2 {
+      grid-area: 7 / 1 / 10 / 3;
+
+      @include media-up(lg) {
+        grid-area: 1 / 7 / 5 / 9;
+      }
+    }
+
+    &--3 {
+      grid-area: 7 / 3 / 10 / 7;
+
+      @include media-up(lg) {
+        grid-area: 1 / 9 / 5 / 13;
+      }
+    }
+
+    &--4 {
+      grid-area: 10 / 1 / 13 / 4;
+
+      @include media-up(lg) {
+        grid-area: 5 / 7 / 9 / 10;
+      }
+    }
+
+    &--5 {
+      grid-area: 10 / 4 / 13 / 7;
+
+      @include media-up(lg) {
+        grid-area: 5 / 10 / 9 / 13;
+      }
+    }
 
     img {
       width: 100%;
