@@ -4,8 +4,8 @@
   }
 
   &__columns {
-    @include fluid-padding($min_width, $max_width,60px, 90px, top);
-    @include fluid-padding($min_width, $max_width,90px, 120px, bottom);
+    @include fluid-padding($min_width, $max_width, 60px, 90px, top);
+    @include fluid-padding($min_width, $max_width, 90px, 120px, bottom);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 60px;
@@ -37,14 +37,13 @@
 .footer-socials {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-
+  gap: 30px;
   border-bottom: 1px solid #bebebe;
   padding: 30px 0;
 
   @include media-up(md) {
     flex-direction: row;
-    gap: 60px;
+    gap: 40px;
     align-items: center;
     justify-content: flex-end;
   }
@@ -63,13 +62,22 @@
     gap: 16px;
 
     @include media-up(sm) {
-      gap: 32px;
+      gap: 24px;
     }
 
     a {
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+        border-color: $black-color;
+      }
 
       img {
         height: 32px;
@@ -100,9 +108,17 @@
       font-family: $tertiary-font;
       @include fluid-font-size($min_width, $max_width, 12px, 14px);
       font-weight: 500;
+      transition: transform 0.3s ease-in-out;
+      display: inline-block;
 
       @include media-up(md) {
         font-weight: 700;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          transform: translateX(6px);
+        }
       }
     }
   }

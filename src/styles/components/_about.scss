@@ -85,7 +85,7 @@
   flex: 1;
 
   @include media-up(lg) {
-    padding-left: 100px;
+    @include fluid-padding($min_width, $max_width,60px, 100px, left);
   }
 
   &__icon {

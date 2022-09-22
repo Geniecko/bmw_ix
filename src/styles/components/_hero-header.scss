@@ -40,7 +40,7 @@
         height: 5px;
         border: none;
         cursor: pointer;
-
+        
         @include media-up(md) {
           width: 60px;
         }
