@@ -69,33 +69,33 @@
 
     &.slide-1 {
       background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
-        url('~/public/assets/images/slider1-mobile.png');
+        url('~/public/assets/images/slider/slider_1_mobile.jpg');
       background-position: right;
 
       @include img-rez(2) {
         background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
-          url('~/public/assets/images/slider1-mobile2@x.png');
+          url('~/public/assets/images/slider/slider_1_mobile@2x.jpg');
       }
 
       @include media-up(sm) {
         background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
-          url('~/public/assets/images/slider1.png');
+          url('~/public/assets/images/slider/slider_1.jpg');
 
         @include img-rez(2) {
           background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
-            url('~/public/assets/images/slider12@x.png');
+            url('~/public/assets/images/slider/slider_1@2x.jpg');
         }
       }
     }
 
     &.slide-2 {
       background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
-        url('~/public/assets/images/slider2.png');
+        url('~/public/assets/images/slider/slider_2.jpg');
     }
 
     &.slide-3 {
       background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
-        url('~/public/assets/images/slider3.png');
+        url('~/public/assets/images/slider/slider_3.jpg');
     }
 
     &__image {

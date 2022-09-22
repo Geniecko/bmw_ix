@@ -107,10 +107,22 @@
     <div class="content-container about__wrapper about__wrapper--facts">
       <div class="about__images about__images--facts">
         <div class="about__image about__image--1">
-          <img src="./assets/images/foto1_1.png" alt="BMW image">
+          <picture>
+            <source media="(min-width: 480px)"
+              srcset="./assets/images/about/foto1_1@2x.jpg 2x, ./assets/images/about/foto1_1.jpg 1x">
+            <img src="./assets/images/about/foto1_1_mobile.jpg"
+              srcset="./assets/images/about/foto1_1_mobile@2x.jpg 2x, ./assets/images/about/foto1_1_mobile.jpg 1x"
+              alt="BMW image">
+          </picture>
         </div>
         <div class="about__image about__image--2">
-          <img src="./assets/images/foto1_2.png" alt="BMW image">
+          <picture>
+            <source media="(min-width: 480px)"
+              srcset="./assets/images/about/foto1_2@2x.jpg 2x, ./assets/images/about/foto1_2.jpg 1x">
+            <img src="./assets/images/about/foto1_2_mobile.jpg"
+              srcset="./assets/images/about/foto1_2_mobile@2x.jpg 2x, ./assets/images/about/foto1_2_mobile.jpg 1x"
+              alt="BMW image">
+          </picture>
         </div>
       </div>
       <div class="bmw-facts">
@@ -161,10 +173,22 @@
         </div>
         <div class="about__images about__images--aerodynamics">
           <div class="about__image about__image--1">
-            <img src="./assets/images/foto2_2.png" alt="BMW image">
+            <picture>
+              <source media="(min-width: 480px)"
+                srcset="./assets/images/about/foto2_2@2x.jpg 2x, ./assets/images/about/foto2_2.jpg 1x">
+              <img src="./assets/images/about/foto2_2_mobile.jpg"
+                srcset="./assets/images/about/foto2_2_mobile@2x.jpg 2x, ./assets/images/about/foto2_2_mobile.jpg 1x"
+                alt="BMW image">
+            </picture>
           </div>
           <div class="about__image about__image--2">
-            <img src="./assets/images/foto2_1.png" alt="BMW image">
+            <picture>
+              <source media="(min-width: 480px)"
+                srcset="./assets/images/about/foto2_1@2x.jpg 2x, ./assets/images/about/foto2_1.jpg 1x">
+              <img src="./assets/images/about/foto2_1_mobile.jpg"
+                srcset="./assets/images/about/foto2_1_mobile@2x.jpg 2x, ./assets/images/about/foto2_1_mobile.jpg 1x"
+                alt="BMW image">
+            </picture>
           </div>
         </div>
 
@@ -185,14 +209,16 @@
 
   <section id="sign-form" class="registration-form padding-xl--top padding-xl--bottom">
     <img class="registration-form__background registration-form__background--2"
-      src="./assets/images/reg-background/bmw-ix-front.png" alt="Registration backgorund">
+      src="./assets/images/reg-background/bmw-ix-front.png" 
+      srcset="./assets/images/reg-background/bmw-ix-front@2x.png 2x, ./assets/images/reg-background/bmw-ix-front.png 1x" 
+      alt="Registration backgorund">
     <img class="registration-form__background registration-form__background--3" src="./assets/svg/sign_path_13.svg"
       alt="Registration backgorund">
     <img class="registration-form__background registration-form__background--4" src="./assets/svg/sign_path_15.svg"
       alt="Registration backgorund">
-      <img class="registration-form__background registration-form__background--5" src="./assets/svg/sign_path_14.svg"
+    <img class="registration-form__background registration-form__background--5" src="./assets/svg/sign_path_14.svg"
       alt="Registration backgorund">
-      <img class="registration-form__background registration-form__background--6" src="./assets/svg/sign_path_12.svg"
+    <img class="registration-form__background registration-form__background--6" src="./assets/svg/sign_path_12.svg"
       alt="Registration backgorund">
     <div class="content-container">
       <div class="registration-form__wrapper">
@@ -227,8 +253,10 @@
         </form>
       </div>
     </div>
-    <img class="registration-form__background registration-form__background--1"
-      src="./assets/images/reg-background/bmw-ix.png" alt="Registration backgorund">
+    <img alt="BMW front" class="registration-form__background registration-form__background--1"
+      src="./assets/images/reg-background/bmw-ix.png" alt="Registration backgorund"
+      srcset="./assets/images/reg-background/bmw-ix@2x.png 2x, ./assets/images/reg-background/bmw-ix.png 1x">
+      
   </section>
 
   <footer class="footer">
