@@ -68,20 +68,24 @@
     background-size: cover;
 
     &.slide-1 {
-      background-image: url('~/public/assets/images/slider1-mobile.png');
+      background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+        url('~/public/assets/images/slider1-mobile.png');
       background-position: right;
 
       @include media-up(sm) {
-        background-image: url('~/public/assets/images/slider1.png');
+        background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+        url('~/public/assets/images/slider1.png');
       }
     }
 
     &.slide-2 {
-      background-image: url('~/public/assets/images/slider2.png');
+      background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+        url('~/public/assets/images/slider2.png');
     }
 
     &.slide-3 {
-      background-image: url('~/public/assets/images/slider3.png');
+      background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+        url('~/public/assets/images/slider3.png');
     }
 
     &__image {
@@ -134,10 +138,11 @@
 }
 
 .hero-button {
-  width: 100%;
+  display: block;
   position: absolute;
   bottom: 90px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 11;
   pointer-events: none;
 

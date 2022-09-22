@@ -19,7 +19,7 @@
 
     &--aerodynamics {
       align-items: center;
-      @include fluid-margin($min_width, $max_width, 60px, 120px, top);
+      @include fluid-padding($min_width, $max_width, 60px, 120px, top);
       flex-direction: column-reverse;
 
       @include media-up(lg) {

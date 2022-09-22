@@ -81,7 +81,7 @@
 
     &__close {
       position: absolute;
-      top: 120px;
+      top: 100px;
       right: 37px;
       @extend %reset-button;
       display: flex;
@@ -132,7 +132,7 @@
 
     &__button {
       position: absolute;
-      bottom: 30px;
+      bottom: 60px;
       left: 50%;
       transform: translateX(-50%);
     }

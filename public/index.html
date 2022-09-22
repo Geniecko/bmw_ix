@@ -19,10 +19,10 @@
         </button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Nowe BMW iX</a>
+            <a class="navigation__link" href="#about-facts">Nowe BMW iX</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Umów jazdę próbną</a>
+            <a class="navigation__link" href="#sign-form">Umów jazdę próbną</a>
           </li>
         </ul>
         <div class="navigation__mobile">
@@ -35,17 +35,17 @@
           </button>
           <ul class="navigation__mobile__list">
             <li class="navigation__mobile__item">
-              <a class="navigation__mobile__link" href="#">NOWE BMW iX</a>
+              <a class="navigation__mobile__link" href="#about-facts">NOWE BMW iX</a>
             </li>
             <li class="navigation__mobile__item">
-              <a class="navigation__mobile__link" href="#">INNOWACYJNA AERODYNAMIKA</a>
+              <a class="navigation__mobile__link" href="#about-aerodynamics">INNOWACYJNA AERODYNAMIKA</a>
             </li>
             <li class="navigation__mobile__item">
-              <a class="navigation__mobile__link" href="#">GALERIA</a>
+              <a class="navigation__mobile__link" href="#gallery">GALERIA</a>
             </li>
           </ul>
 
-          <button class="button navigation__mobile__button"><span>Umów jazdę próbną</span></button>
+          <a href="#sign-form" class="button navigation__mobile__button"><span>Umów jazdę próbną</span></a>
 
         </div>
         <span class="navigation__additional-text"><strong>Radość</strong> z jazdy</span>
@@ -98,12 +98,12 @@
       </div>
     </div>
     <div class="hero-button">
-      <button class="button"><span>Umów jazdę próbną</span></button>
+      <a href="#sign-form" class="button"><span>Umów jazdę próbną</span></a>
     </div>
 
   </section>
 
-  <section class="about padding-xl--top padding-xl--bottom">
+  <section id="about-facts" class="about padding-xl--top padding-xl--bottom">
     <div class="content-container about__wrapper about__wrapper--facts">
       <div class="about__images about__images--facts">
         <div class="about__image about__image--1">
@@ -144,7 +144,7 @@
       </div>
     </div>
     <div class="about__wide-container">
-      <div class="content-container about__wrapper about__wrapper--aerodynamics">
+      <div id="about-aerodynamics" class="content-container about__wrapper about__wrapper--aerodynamics">
         <div class="bmw-aerodynamics">
           <span class="bmw-aerodynamics__icon">
             <img src="./assets/images/icon_areodynamics.png" alt="Icon areodynamics">
@@ -172,7 +172,7 @@
     </div>
   </section>
 
-  <section class="gallery">
+  <section id="gallery" class="gallery">
     <div class="gallery__image">
       <picture>
         <source media="(min-width:992px)" srcset="./assets/images/d_gallery.png">
@@ -183,7 +183,7 @@
     </div>
   </section>
 
-  <section class="registration-form padding-xl--top padding-xl--bottom">
+  <section id="sign-form" class="registration-form padding-xl--top padding-xl--bottom">
     <img class="registration-form__background registration-form__background--2"
       src="./assets/images/reg-background/bmw-ix-front.png" alt="Registration backgorund">
     <img class="registration-form__background registration-form__background--3" src="./assets/svg/sign_path_13.svg"
