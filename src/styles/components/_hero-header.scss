@@ -90,12 +90,44 @@
 
     &.slide-2 {
       background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
-        url('~/public/assets/images/slider/slider_2.jpg');
+        url('~/public/assets/images/gallery/gallery_1_mobile.jpg');
+      background-position: right;
+
+      @include img-rez(2) {
+        background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+          url('~/public/assets/images/gallery/gallery_1_mobile@2x.jpg');
+      }
+
+      @include media-up(sm) {
+        background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+          url('~/public/assets/images/gallery/gallery_1.jpg');
+
+        @include img-rez(2) {
+          background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+            url('~/public/assets/images/gallery/gallery_1@2x.jpg');
+        }
+      }
     }
 
     &.slide-3 {
       background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
-        url('~/public/assets/images/slider/slider_3.jpg');
+        url('~/public/assets/images/about/foto2_1_mobile.jpg');
+      background-position: right;
+
+      @include img-rez(2) {
+        background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+          url('~/public/assets/images/about/foto2_1_mobile@2x.jpg');
+      }
+
+      @include media-up(sm) {
+        background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+          url('~/public/assets/images/about/foto2_1.jpg');
+
+        @include img-rez(2) {
+          background-image: linear-gradient(90deg, #000000 0%, #00000000 100%),
+            url('~/public/assets/images/about/foto2_1@2x.jpg');
+        }
+      }
     }
 
     &__image {
