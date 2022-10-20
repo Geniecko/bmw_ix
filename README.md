@@ -1,18 +1,15 @@
-## Zadanie rekrutacyjne
+## BMW IX
 
-### Użyte biblioteki
+### Libraries used
 
-- SplideJS
-- AOS 
+- AOC
+- SplideJs
 
-### Uruchomienie
+### Setup
 
-Aby uruchomić projekt należy zainstalować paczki lokalnie używając komendy:
+To run this project, install it locally using npm:
 
-- Uruchom ```npm install``` aby zainstalować potrzebne paczki.
-- Uruchom ```npm run build``` aby zbudować projekt na produkcję lub uruchom ```npm start``` dla wersji deweloperskiej.
+- Run ```npm install``` to install packages
+- Run ```npm run build``` to build js and css for production or run ```npm start``` for development
 
-
-### Formatowanie 
-
-- Uruchom ```npm run format``` aby sformatować wszystkie pliki znajdujące się w katalogu ```src```.
+### Live: https://bmw-example-site.netlify.app/
